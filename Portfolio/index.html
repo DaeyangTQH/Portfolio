@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trần Quốc Hải</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/images/Daco_4212514.png">
+</head>
+
+<body>
+    <nav>
+        <!-- Navigation links -->
+         <img src="assets/images/pic6.jpg" alt="Myself" class = "profile-pic">
+        <ul class = "nav-links">
+            <li><a href="#about">About me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#schedule">Future Schedule</a></li>
+        </ul>
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com/tranquochai411"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/_haichann_?fbclid=IwY2xjawIe2_BleHRuA2FlbQIxMAABHf_8pPZNSe1JccQ0kJzEfcIhq7D1bcMA0UkAZbIYLT646fMXZv5Xc5LBag_aem_rRQTpp5rkj1NU2nbeDcLvg"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://github.com/DaeyangTQH"><i class="fab fa-github"></i></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <!-- <img src="assets/images/profile.jpg" alt="Profile Picture" style="width:150px; border-radius:50%;"> -->
+            <p>I'm Trần Quốc Hải<br>
+                <a href="https://www.google.com/maps/place/Ba+V%C3%AC,+H%C3%A0+N%E1%BB%99i,+Vietnam" target="_blank">
+                    <i class="fas fa-map-marker-alt" style="color: #4e795d;"></i>
+                </a> Ba Vì, Hà Nội, Việt Nam <br>
+            </p>
+
+            <div class="carousel">
+                <!-- Carousel images -->
+                <div><img src="assets/images/pic1.jpg" alt="Image 1">Myself</div>
+                <div><img src="assets/images/pic2.JPG" alt="Image 2">Myself again ><</div>
+                <div><img src="assets/images/pic3.JPG" alt="Image 3">My country <3 </div>
+                <div><img src="assets/images/pic4.JPG" alt="Image 4">BUG :<< </div>
+                <div><img src="assets/images/pic5.JPG" alt="Image 5">HNUE</div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p>FPT university(2023 -2027) <br>
+            Major: Software Engineering <br>
+            Some technologies I have learned:<br>
+            <div class="tech">
+                <i class="fas fa-code" style="color: #A8B9CC;" data-tech="C"></i>
+                <i class="fas fa-code" style="color: #00599C;" data-tech="C++"></i>
+                <i class="fab fa-java" style="color: #007396;" data-tech="Java"></i>
+                <i class="fab fa-html5" style="color: #E34F26;" data-tech="HTML"></i>
+                <i class="fab fa-css3-alt" style="color: #1572B6;" data-tech="CSS"></i>
+                <i class="fab fa-js" style="color: #F7DF1E;" data-tech="JavaScript"></i>
+            </div>
+            </p>
+        </section>
+
+        <section id="schedule">
+            <h2>Future Schedule</h2>
+            <p>Check out my <a href="cv_link.pdf">CV</a> for more details.</p>
+            <!-- <iframe src="https://calendar.google.com/calendar/embed?src=tranquochaibavi%40gmail.com&ctz=Asia%2FHo_Chi_Minh" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+        </section>
+    </main>
+
+    <script>
+        $(document).ready(function () {
+            $('.carousel').slick({
+                autoplay: true,
+                dots: false, 
+                prevArrow: '<button type="button" class="slick-prev"></button>',
+                nextArrow: '<button type="button" class="slick-next"></button>'
+            });
+        });
+    </script>
+
+</body>
+
+</html>
